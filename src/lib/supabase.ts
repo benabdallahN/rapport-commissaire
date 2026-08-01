@@ -12,8 +12,8 @@ export interface AuthUser {
 }
 
 // Default Supabase config stored in localStorage or fallback
-const LOCAL_STORAGE_URL_KEY = 'https://ehvajmameschhodtfcfw.supabase.co';
-const LOCAL_STORAGE_ANON_KEY = 'sb_publishable_454yqfrNQI6NjMto4AdjOg_nO1Hy3CE';
+const LOCAL_STORAGE_URL_KEY = 'dna_supabase_project_url';
+const LOCAL_STORAGE_ANON_KEY = 'dna_supabase_anon_key';
 
 export const getStoredSupabaseCredentials = () => {
   const metaEnv = (import.meta as unknown as { env?: Record<string, string> }).env || {};
